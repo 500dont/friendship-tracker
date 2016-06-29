@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.madym.points.MainActivity">
+
+    <TextView
+        android:id="@+id/score"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/dark_gray"
+        android:gravity="center"
+        android:textSize="@dimen/textSizeSmall"
+        android:textStyle="bold"/>
+
+
+    <!-- TODO: do selectable backgrounds properly instead of LL hack -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/yellow">
+
+        <TextView
+            android:id="@+id/m_points"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/textSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Mady++"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dark_green">
+
+        <TextView
+            android:id="@+id/s_points"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Sandy++"/>
+        </LinearLayout>
+
+</LinearLayout>
